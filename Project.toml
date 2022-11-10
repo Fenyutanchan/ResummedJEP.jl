@@ -1,0 +1,7 @@
+name = "ResummedJEP"
+uuid = "541d1f55-0a33-4b6d-a8d5-7e2bfb423fd5"
+authors = ["Quan-feng WU <wuquanfeng@ihep.ac.cn>"]
+version = "0.1.0"
+
+[deps]
+Polylogarithms = "43cc4a2f-1a2b-4fbb-87e3-95c794af13de"
