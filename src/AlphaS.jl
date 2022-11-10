@@ -1,5 +1,5 @@
 function get_AlphaS(method::AbstractString)::Function
-    @assert method ∈ ["intenal", "from_LHAPDF"]
+    @assert method ∈ ["internal", "from_LHAPDF"]
     return (eval ∘ Symbol)("get_AlphaS_" * method)
 end
 get_AlphaS(method::Symbol)::Function    =   (get_AlphaS ∘ string)(method)
