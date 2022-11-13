@@ -4,7 +4,7 @@ const   CF  =   4/3
 const   CA  =   3
 
 const   beta05  =   11 - 10/3
-const   beta15  =   51 - (19*5)/3
+const   beta15  =   102 - (38*5)/3
 
 const   KK5 =   CA * (67/18 - pi^2/6) - 25/9
 
