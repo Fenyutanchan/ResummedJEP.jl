@@ -60,8 +60,8 @@ function get_AlphaS_internal(QQ)
     result_left     =   target_precision    =   10^-8
     # @assert inv_solution_to_β_function(result_left) - target < 0
     if inv_solution_to_β_function(result_left) - target > 0
-        printstyled("Warnning: the energy scale is too high! (almost 0)\n", color=:red)
-        return  result_left
+        printstyled("Warnning: the energy scale is too high! (α_s → 0)\n", color=:red)
+        return  4 * π * result_left
     end
     result_right    =   1.
     while inv_solution_to_β_function(result_right) - target ≤ 0
