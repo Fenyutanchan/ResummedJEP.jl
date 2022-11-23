@@ -1,6 +1,7 @@
 module ResummedJEP
 
     using   Polylogarithms
+    using   Roots
 
     using   AlphaS, JetTool
     using   StructParticle
