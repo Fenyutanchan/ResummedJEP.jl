@@ -2,9 +2,9 @@ module ResummedJEP
 
     using   Polylogarithms
 
+    using   AlphaS
     export  ResumQuark
 
-    include("AlphaS.jl")
     include("Constants.jl")
     include("TmpFunction.jl")
     include("FinalExpression.jl")
