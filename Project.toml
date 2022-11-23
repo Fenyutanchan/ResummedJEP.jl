@@ -5,4 +5,6 @@ version = "0.1.0"
 
 [deps]
 AlphaS = "cb1ee771-e516-45dd-b486-2e56d6c85bfe"
+JetTool = "b22dc29b-815f-4300-a1b3-e2f97893f71a"
 Polylogarithms = "43cc4a2f-1a2b-4fbb-87e3-95c794af13de"
+StructParticle = "ba31282d-ba71-4615-a5c1-2453621d5387"
