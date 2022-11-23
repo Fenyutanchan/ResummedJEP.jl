@@ -16,9 +16,11 @@ jet_to_JEP_Quark(
     C1::Real,
     C2::Real,
     C3::Real;
-    aa::Real=0
+    aa::Real=0,
+    AlphaS_MZ::Real=.1179
 )::Vector{<:Real}   =   jet_to_JEP_Quark(
-    j.Energy, rr_list, RR, C1, C2, C3; aa=aa
+    j.Energy, rr_list, RR, C1, C2, C3;
+    aa=aa, AlphaS_MZ=AlphaS_MZ
 )
 
 function jet_to_JEP_Quark(
@@ -28,11 +30,13 @@ function jet_to_JEP_Quark(
     C1::Real,
     C2::Real,
     C3::Real;
-    aa::Real=0
+    aa::Real=0,
+    AlphaS_MZ::Real=.1179
 )::Vector{<:Real}
     f   =   (
         rr -> (real ∘ ResumQuark)(
-            jet_energy, rr, RR, C1, C2, C3
+            jet_energy, rr, RR, C1, C2, C3;
+            AlphaS_MZ=AlphaS_MZ
         )
     )
 
@@ -58,11 +62,13 @@ function jet_to_JEP_Quark(
     C1::Real,
     C2::Real,
     C3::Real;
-    aa::Real=0
+    aa::Real=0,
+    AlphaS_MZ::Real=.1179
 )::Real
     f   =   (
         rr -> (real ∘ ResumQuark)(
-            jet_energy, rr, RR, C1, C2, C3
+            jet_energy, rr, RR, C1, C2, C3;
+            AlphaS_MZ=AlphaS_MZ
         )
     )
 
