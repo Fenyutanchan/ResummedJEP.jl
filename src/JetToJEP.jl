@@ -9,7 +9,7 @@ jet_to_JEP(
     RR::Real
 )::Vector{<:Real}   =   energy_within_cone_r.(Ref(j), rr_list) ./ energy_within_cone_r(j, RR)
 
-function jet_to_JEP_Quark(
+jet_to_JEP_Quark(
     j::Jet,
     rr_list::Vector{<:Real},
     RR::Real,
