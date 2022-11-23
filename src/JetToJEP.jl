@@ -16,23 +16,9 @@ function jet_to_JEP_Quark(
     C1::Real,
     C2::Real,
     C3::Real
-)::Vector{<:Real}
-    f   =   (
-        rr -> (real ∘ ResumQuark)(
-            j.Energy, rr, RR, C1, C2, C3
-        )
-    )
-
-    new_rr_zero =   find_zero(f, first(rr_list))
-
-    ratio       =   (RR - new_rr_zero) / RR
-    new_rr_list =   rr_list * ratio / RR .+ new_rr_zero
-
-    JEP =   (real ∘ ResumQuark).(j.Energy, new_rr_list, RR, C1, C2, C3)
-    JEP /=  last(JEP)
-
-    return  JEP
-end
+)::Vector{<:Real}   =   jet_to_JEP_Quark(
+    j.Energy, rr_list, RR, C1, C2, C3
+)
 
 function jet_to_JEP_Quark(
     jet_energy::Real,
@@ -51,10 +37,40 @@ function jet_to_JEP_Quark(
     new_rr_zero =   find_zero(f, first(rr_list))
 
     ratio       =   (RR - new_rr_zero) / RR
-    new_rr_list =   rr_list * ratio / RR .+ new_rr_zero
+    new_rr_list =   rr_list * ratio .+ new_rr_zero
 
     JEP =   (real ∘ ResumQuark).(jet_energy, new_rr_list, RR, C1, C2, C3)
-    JEP /=  last(JEP)
+    if last(new_rr_list) ≈ RR
+        JEP /=  last(JEP)
+    else
+        JEP /=  (real ∘ ResumQuark)(jet_energy, RR, RR, C1, C2, C3)
+    end
+
+    return  JEP
+end
+
+function jet_to_JEP_Quark(
+    jet_energy::Real,
+    rr::Real,
+    RR::Real,
+    C1::Real,
+    C2::Real,
+    C3::Real
+)::Real
+    f   =   (
+        rr -> (real ∘ ResumQuark)(
+            jet_energy, rr, RR, C1, C2, C3
+        )
+    )
+
+    new_rr_zero =   find_zero(f, first(rr_list))
+
+    ratio   =   (RR - new_rr_zero) / RR
+    new_rr  =   rr * ratio .+ new_rr_zero
+
+    JEP     =   (real ∘ ResumQuark)(jet_energy, new_rr, RR, C1, C2, C3)
+    JEP_RR  =   (real ∘ ResumQuark)(jet_energy, RR, RR, C1, C2, C3)
+    JEP     /=  JEP_RR
 
     return  JEP
 end
