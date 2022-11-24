@@ -4,7 +4,7 @@ module ResummedJEP
     using   Measurements
     # import  PolyLog
     using   Polylogarithms
-    import  Roots
+    using   Roots
 
     using   AlphaS, JetTool
     using   StructParticle
