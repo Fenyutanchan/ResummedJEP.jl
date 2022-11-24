@@ -10,7 +10,7 @@ Polylogarithms.polylog(s::Number, z::Measurement)::Number   =   measurement(
 )
 
 polylog(s, z)   =   if s == 2
-    li2(z)
+    PolyLog.li2(z)
 end
 PolyLog.li2(z::Measurement)::Number =   measurement(
     li2(z.val),
