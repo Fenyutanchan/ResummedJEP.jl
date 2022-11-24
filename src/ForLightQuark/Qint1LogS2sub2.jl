@@ -7,7 +7,7 @@ function Qint1LogS2sub2(ej, r, AlphaS)
     cotro2  =   cot(r/2)
     tanro2  =   tan(r/2)
 
-    logr    =   log(r)
+    logr    =   log(r + 0im)
 
     result  =   -(
         (
