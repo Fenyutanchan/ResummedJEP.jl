@@ -2,8 +2,8 @@ module ResummedJEP
 
     using   FiniteDifferences
     using   Measurements
-    import  PolyLog
-    import   Polylogarithms
+    # import  PolyLog
+    using   Polylogarithms
     import  Roots
 
     using   AlphaS, JetTool
@@ -20,6 +20,6 @@ module ResummedJEP
     # include("NonPerturbativeEffect.jl")
     include("TmpFunction.jl")
 
-    include("ExtraPackageCompatible.jl")
+    # include("ExtraPackageCompatible.jl")
 
 end # module ResummedJEP

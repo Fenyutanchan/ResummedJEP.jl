@@ -7,8 +7,8 @@ function ResumGluon(ej, r, R, C1sq, C2sq, C3sq; AlphaS_MZ::Real=.1179)
     AlphaS          =   get_AlphaS(sqrt(C3sq) * r * ej; AlphaS_MZ=AlphaS_MZ)
     AlphaS_split    =   get_AlphaS(sqrt(C3sq) * r * ej; AlphaS_MZ=AlphaS_MZ)
 
-    r   =   r + 0im
-    R   =   R + 0im
+    # r   =   r + 0im
+    # R   =   R + 0im
     
     InitialGluon    =   (
         Gint1Con(ej, r, AlphaS) +
@@ -45,8 +45,8 @@ function ResumQuark(ej, r, R, C1sq, C2sq, C3sq; AlphaS_MZ::Real=.1179)
 
     AlphaS  =   get_AlphaS(sqrt(C3sq) * r * ej; AlphaS_MZ=AlphaS_MZ)
 
-    r   =   r + 0im
-    R   =   R + 0im
+    # r   =   r + 0im
+    # R   =   R + 0im
 
     InitialQuark   =   (
         Qint1Con(ej, r, AlphaS) +

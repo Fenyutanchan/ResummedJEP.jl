@@ -16,7 +16,7 @@ PolyLog.li2(z::Measurement)::Number =   measurement(
     PolyLog.li2(z.val),
     (first ∘ extrapolate_fdm)(
         central_fdm(5, 1),
-        z0 -> li2(z0),
+        z0 -> PolyLog.li2(z0),
         z.val
     ) * z.err
 )
