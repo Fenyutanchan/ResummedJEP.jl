@@ -5,34 +5,34 @@ set_JEP_zeros(
 
 jet_to_JEP(
     j::Jet,
-    rr_list::Vector{<:Number},
-    RR::Number
-)::Vector{<:Number}   =   energy_within_cone_r.(Ref(j), rr_list) ./ energy_within_cone_r(j, RR)
+    rr_list::Vector{<:Real},
+    RR::Real
+)::Vector{<:Real}   =   energy_within_cone_r.(Ref(j), rr_list) ./ energy_within_cone_r(j, RR)
 
 jet_to_JEP_Quark(
     j::Jet,
-    rr_list::Vector{<:Number},
-    RR::Number,
+    rr_list::Vector{<:Real},
+    RR::Real,
     C1::Real,
     C2::Real,
     C3::Real;
     aa::Real=0,
     AlphaS_MZ::Real=.1179
-)::Vector{<:Number}   =   jet_to_JEP_Quark(
+)::Vector{<:Real}   =   jet_to_JEP_Quark(
     j.Energy, rr_list, RR, C1, C2, C3;
     aa=aa, AlphaS_MZ=AlphaS_MZ
 )
 
 function jet_to_JEP_Quark(
     jet_energy::Real,
-    rr_list::Vector{<:Number},
-    RR::Number,
+    rr_list::Vector{<:Real},
+    RR::Real,
     C1::Real,
     C2::Real,
     C3::Real;
     aa::Real=0,
     AlphaS_MZ::Real=.1179
-)::Vector{<:Number}
+)::Vector{<:Real}
     f   =   (
         rr -> (real ∘ ResumQuark)(
             jet_energy, rr, RR, C1, C2, C3;
@@ -57,14 +57,14 @@ end
 
 function jet_to_JEP_Quark(
     jet_energy::Real,
-    rr::Number,
-    RR::Number,
+    rr::Real,
+    RR::Real,
     C1::Real,
     C2::Real,
     C3::Real;
     aa::Real=0,
     AlphaS_MZ::Real=.1179
-)::Number
+)::Real
     f   =   (
         rr -> (real ∘ ResumQuark)(
             jet_energy, rr, RR, C1, C2, C3;
