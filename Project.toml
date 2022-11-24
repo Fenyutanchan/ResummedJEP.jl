@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [deps]
 AlphaS = "cb1ee771-e516-45dd-b486-2e56d6c85bfe"
+FiniteDifferences = "26cc04aa-876d-5657-8c51-4c34ba976000"
 JetTool = "b22dc29b-815f-4300-a1b3-e2f97893f71a"
 Measurements = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
 Polylogarithms = "43cc4a2f-1a2b-4fbb-87e3-95c794af13de"

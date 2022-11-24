@@ -1,8 +1,9 @@
 module ResummedJEP
 
+    using   FiniteDifferences
     using   Measurements
     using   Polylogarithms
-    using   Roots
+    import  Roots
 
     using   AlphaS, JetTool
     using   StructParticle
