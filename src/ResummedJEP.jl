@@ -17,4 +17,6 @@ module ResummedJEP
     # include("NonPerturbativeEffect.jl")
     include("TmpFunction.jl")
 
+    include("ExtraPackageCompatible.jl")
+
 end # module ResummedJEP
