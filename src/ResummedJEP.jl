@@ -2,7 +2,8 @@ module ResummedJEP
 
     using   FiniteDifferences
     using   Measurements
-    using   Polylogarithms
+    import  PolyLog
+    import  Polylogarithms
     import  Roots
 
     using   AlphaS, JetTool

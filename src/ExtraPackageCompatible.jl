@@ -9,6 +9,18 @@ Polylogarithms.polylog(s::Number, z::Measurement)::Number   =   measurement(
     ) * z.err
 )
 
+polylog(s, z)   =   if s == 2
+    li2(z)
+end
+PolyLog.li2(z::Measurement)::Number =   measurement(
+    li2(z.val),
+    (first ∘ extrapolate_fdm)(
+        central_fdm(5, 1),
+        z0 -> li2(z0),
+        z.val
+    ) * z.err
+)
+
 find_zero(f::Function, x0::Number)  =   if (typeof ∘ f)(x0) <: Union{Measurement, Complex{<:Measurement}}
     measurement(
         Roots.find_zero(x -> f(x).val, x0),
