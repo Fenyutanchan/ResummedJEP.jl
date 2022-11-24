@@ -15,8 +15,7 @@ find_zero(f::Function, x0::Number)  =   if (typeof ∘ f)(x0) <: Union{Measureme
         (first ∘ extrapolate_fdm)(
             central_fdm(5, 1),
             y -> Roots.find_zero(x -> f(x).val, y),
-            x0,
-            max_range=1e-2
+            x0
         ) * f(x0).err
     )
 else
