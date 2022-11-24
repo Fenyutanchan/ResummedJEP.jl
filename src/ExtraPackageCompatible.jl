@@ -9,16 +9,31 @@ Polylogarithms.polylog(s::Number, z::Measurement)::Number   =   measurement(
     ) * z.err
 )
 
-# polylog(s, z)   =   if s == 2
-#     PolyLog.li2(z)
-# end
+polylog(s, z)   =   if s == 2
+    PolyLog.li2(z)
+end
 PolyLog.li2(z::Measurement)::Number =   measurement(
-    li2(z.val),
+    PolyLog.li2(z.val),
     (first ∘ extrapolate_fdm)(
         central_fdm(5, 1),
         z0 -> li2(z0),
         z.val
     ) * z.err
+)
+PolyLog.li2(z::Complex{<:Measurement})::Number  =   measurement(
+    PolyLog.li2(z.re.val),
+    (first ∘ extrapolate_fdm)(
+        central_fdm(5, 1),
+        z0 -> PolyLog.li2(z0),
+        z.re.val
+    ) * z.re.err
+) + im * measurement(
+    PolyLog.li2(z.im.val),
+    (first ∘ extrapolate_fdm)(
+        central_fdm(5, 1),
+        z0 -> PolyLog.li2(z0),
+        z.im.val
+    ) * z.im.err
 )
 
 find_zero(f::Function, x0::Number)  =   if (typeof ∘ f)(x0) <: Union{Measurement, Complex{<:Measurement}}
