@@ -2,16 +2,16 @@ Measurements.measurement(x::Complex, y::Complex)            =   (x.re ± y.re) +
 
 Polylogarithms.polylog(s::Number, z::Measurement)::Number   =   measurement(
     polylog(s, z.val),
-    (first ∘ extrapolate_fdm)(
-        central_fdm(5, 1),
+    central_fdm(5, 1)(
         z0 -> polylog(s, z0),
-        z.val
+        z.val,
+        max_range=9e-2
     ) * z.err
 )
 
-polylog(s, z)   =   if s == 2
-    PolyLog.li2(z)
-end
+# polylog(s, z)   =   if s == 2
+#     PolyLog.li2(z)
+# end
 PolyLog.li2(z::Measurement)::Number =   measurement(
     li2(z.val),
     (first ∘ extrapolate_fdm)(
