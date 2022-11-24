@@ -1,5 +1,6 @@
 module ResummedJEP
 
+    using   Measurements
     using   Polylogarithms
     using   Roots
 
