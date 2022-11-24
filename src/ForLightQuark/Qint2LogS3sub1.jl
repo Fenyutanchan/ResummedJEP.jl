@@ -222,69 +222,69 @@ function Qint2LogS3sub1(ej, r, R, AlphaS)
             log((2 * r2)/(4 + r2)) -
             737280 * r18 * cosbigR^5 * log(8/(4 + r2)) * log((2 * r2)/(4 + r2)) +
             48318382080 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             72477573120 * r2 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             39258685440 * r4 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             6039797760 * r6 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             2642411520 * r8 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             1321205760 * r10 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             165150720 * r12 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             23592960 * r14 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             9584640 * r16 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             1105920 * r18 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             46080 * r20 * cosbigR^3 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             96636764160 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             96636764160 * r2 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             18119393280 * r4 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             12079595520 * r6 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             5284823040 * r8 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             330301440 * r12 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             47185920 * r14 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             4423680 * r16 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             1474560 * r18 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             92160 * r20 * cosbigR^4 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             48318382080 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             24159191040 * r2 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             9059696640 * r4 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             6039797760 * r6 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             377487360 * r8 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             566231040 * r10 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             23592960 * r12 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             23592960 * r14 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) -
+            log((4 - r2)/(4 + r2)) -
             2211840 * r16 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             368640 * r18 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             46080 * r20 * cosbigR^5 * tmp7 *
-            log((4 - r2)/(4 + r2) + 0im) +
+            log((4 - r2)/(4 + r2)) +
             36238786560 * cosbigR^3 * tmp1 +
             63417876480 * r2 * cosbigR^3 * tmp1 -
             72477573120 * r4 * cosbigR^3 * tmp1 +
@@ -481,69 +481,69 @@ function Qint2LogS3sub1(ej, r, R, AlphaS)
             tmp9 +
             46080 * r20 * cosbigR^5 * log(8/(4 + r2)) *
             tmp9 -
-            48318382080 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            48318382080 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            72477573120 * r2 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            72477573120 * r2 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            39258685440 * r4 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            39258685440 * r4 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            6039797760 * r6 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            6039797760 * r6 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            2642411520 * r8 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            2642411520 * r8 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            1321205760 * r10 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            1321205760 * r10 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            165150720 * r12 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            165150720 * r12 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            23592960 * r14 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            23592960 * r14 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            9584640 * r16 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            9584640 * r16 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            1105920 * r18 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            1105920 * r18 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            46080 * r20 * cosbigR^3 * log((4 - r2)/(4 + r2) + 0im) *
+            46080 * r20 * cosbigR^3 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            96636764160 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            96636764160 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            96636764160 * r2 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            96636764160 * r2 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            18119393280 * r4 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            18119393280 * r4 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            12079595520 * r6 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            12079595520 * r6 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            5284823040 * r8 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            5284823040 * r8 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            330301440 * r12 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            330301440 * r12 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            47185920 * r14 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            47185920 * r14 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            4423680 * r16 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            4423680 * r16 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            1474560 * r18 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            1474560 * r18 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            92160 * r20 * cosbigR^4 * log((4 - r2)/(4 + r2) + 0im) *
+            92160 * r20 * cosbigR^4 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            48318382080 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            48318382080 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            24159191040 * r2 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            24159191040 * r2 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            9059696640 * r4 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            9059696640 * r4 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            6039797760 * r6 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            6039797760 * r6 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            377487360 * r8 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            377487360 * r8 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            566231040 * r10 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            566231040 * r10 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            23592960 * r12 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            23592960 * r12 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            23592960 * r14 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            23592960 * r14 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 +
-            2211840 * r16 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            2211840 * r16 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            368640 * r18 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            368640 * r18 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 -
-            46080 * r20 * cosbigR^5 * log((4 - r2)/(4 + r2) + 0im) *
+            46080 * r20 * cosbigR^5 * log((4 - r2)/(4 + r2)) *
             tmp9 - 1006632960 * r4 * log(1 - cosbigR) -
             503316480 * r6 * log(1 - cosbigR) + 125829120 * r8 * log(1 - cosbigR) +
             94371840 * r10 * log(1 - cosbigR) - 5898240 * r14 * log(1 - cosbigR) -
@@ -827,65 +827,65 @@ function Qint2LogS3sub1(ej, r, R, AlphaS)
         + 737280 * r18 * cosbigR^5 * log((2 * r2)/(4 + r2)) *
             tmp14
         - 48318382080 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             72477573120 * r2 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             114756157440 * r4 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             70967623680 * r6 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             7549747200 * r8 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             7832862720 * r10 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             448266240 * r12 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             218234880 * r14 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             28753920 * r16 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             737280 * r18 * cosbigR^3 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             96636764160 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             96636764160 * r2 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             169114337280 * r4 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             241591910400 * r6 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             80782295040 * r8 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             754974720 * r10 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             4624220160 * r12 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             943718400 * r14 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             69304320 * r16 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             1474560 * r18 * cosbigR^4 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             48318382080 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             24159191040 * r2 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             66437775360 * r4 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             158544691200 * r6 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             110226309120 * r8 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             38031851520 * r10 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             7290224640 * r12 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             772669440 * r14 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             40550400 * r16 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) +
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) +
             737280 * r18 * cosbigR^5 * tmp1 *
-            log(1 + ((-4 + r2) * cosbigR)/(4 + r2) + 0im) -
+            log(1 + ((-4 + r2) * cosbigR)/(4 + r2)) -
             39258685440 * r4 * cosbigR^2 * tmp10 +
             16609443840 * r6 * cosbigR^2 * tmp10 +
             11702108160 * r8 * cosbigR^2 * tmp10 -
