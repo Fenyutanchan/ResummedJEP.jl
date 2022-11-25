@@ -40,7 +40,7 @@ function jet_to_JEP_Quark(
         )
     )
 
-    new_rr_zero =   find_zero(f, first(rr_list)) + aa
+    new_rr_zero =   find_root(f, first(rr_list)) + aa
 
     ratio       =   (RR - new_rr_zero) / RR
     new_rr_list =   rr_list * ratio .+ new_rr_zero
@@ -72,7 +72,7 @@ function jet_to_JEP_Quark(
         )
     )
 
-    new_rr_zero =   find_zero(f, rr) + aa
+    new_rr_zero =   find_root(f, rr) + aa
 
     ratio   =   (RR - new_rr_zero) / RR
     new_rr  =   rr * ratio .+ new_rr_zero
