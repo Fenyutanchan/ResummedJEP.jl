@@ -1491,76 +1491,76 @@ function Qint1LogS2sub1(ej, r, AlphaS)
             (1440 * (-4 + r2) * tmp1 * 
             log((complex(0, -0.5) * (4 + r2) * (complex(0, 2) * cosro2 + r * sinro2)^2)/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2) -    
-            (2880 * (-4 + r2)^6 * polylog(2,    
+            (2880 * (-4 + r2)^6 * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^6 -    
-            (576 * (-4 + r2)^5 * polylog(2,    
+            (576 * (-4 + r2)^5 * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^5 +    
-            (6624 * (-4 + r2)^4 * polylog(2,    
+            (6624 * (-4 + r2)^4 * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^4 +    
-            (288 * (-4 + r2)^3 * polylog(2,    
+            (288 * (-4 + r2)^3 * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^3 -    
-            (4896 * (-4 + r2)^2 * polylog(2,    
+            (4896 * (-4 + r2)^2 * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^2 +    
-            (1440 * (-4 + r2) * polylog(2,    
+            (1440 * (-4 + r2) * Li2(   
             (r * (4 + r2 - (-4 + r2) * cosr))/   
             (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2) +    
-            (2880 * (-4 + r2)^6 * polylog(2,    
+            (2880 * (-4 + r2)^6 * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^6 +    
-            (576 * (-4 + r2)^5 * polylog(2,    
+            (576 * (-4 + r2)^5 * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^5 -    
-            (6624 * (-4 + r2)^4 * polylog(2,    
+            (6624 * (-4 + r2)^4 * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^4 -    
-            (288 * (-4 + r2)^3 * polylog(2,    
+            (288 * (-4 + r2)^3 * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^3 +    
-            (4896 * (-4 + r2)^2 * polylog(2,    
+            (4896 * (-4 + r2)^2 * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2)^2 -    
-            (1440 * (-4 + r2) * polylog(2,    
+            (1440 * (-4 + r2) * Li2(   
             (-16 + r4 - (-4 + r2)^2 * cosr)/   
             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))))/(4 + r2) +    
-            (2880 * (-4 + r2)^6 * polylog(2,    
+            (2880 * (-4 + r2)^6 * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2)^6 +    
-            (576 * (-4 + r2)^5 * polylog(2,    
+            (576 * (-4 + r2)^5 * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2)^5 -    
-            (6624 * (-4 + r2)^4 * polylog(2,    
+            (6624 * (-4 + r2)^4 * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2)^4 -    
-            (288 * (-4 + r2)^3 * polylog(2,    
+            (288 * (-4 + r2)^3 * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2)^3 +    
-            (4896 * (-4 + r2)^2 * polylog(2,    
+            (4896 * (-4 + r2)^2 * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2)^2 -    
-            (1440 * (-4 + r2) * polylog(2,    
+            (1440 * (-4 + r2) * Li2(   
             (complex(0, -0.25) * (-4 + r2) * (-4 - r2 + (-4 + r2) * cosr))/   
             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))))/(4 + r2) -    
-            (2880 * (-4 + r2)^6 * polylog(2,    
+            (2880 * (-4 + r2)^6 * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2)^6 -    
-            (576 * (-4 + r2)^5 * polylog(2,    
+            (576 * (-4 + r2)^5 * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2)^5 +    
-            (6624 * (-4 + r2)^4 * polylog(2,    
+            (6624 * (-4 + r2)^4 * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2)^4 +    
-            (288 * (-4 + r2)^3 * polylog(2,    
+            (288 * (-4 + r2)^3 * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2)^3 -    
-            (4896 * (-4 + r2)^2 * polylog(2,    
+            (4896 * (-4 + r2)^2 * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2)^2 +    
-            (1440 * (-4 + r2) * polylog(2,    
+            (1440 * (-4 + r2) * Li2(   
             (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/   
             (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)))/(4 + r2) -    
             (complex(0, 2304) * r * log((2 * r * sinro2)/(complex(0, -2) * cosro2 + r * sinro2)) * 

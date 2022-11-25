@@ -21,9 +21,9 @@ function Qint1LogS2sub2(ej, r, AlphaS)
             4 * cosr  *  log(4 + r2 - (-4 + r2) * cosr) -     
             r2 * cosr  *  log(4 + r2 - (-4 + r2) * cosr) +     
             (-4 - r2 + (-4 + r2) * cosr) *     
-            polylog(2, 0.5 - (complex(0, 1) * cotro2)/r) +     
+            Li2(0.5 - (complex(0, 1) * cotro2)/r) +     
             (-4 - r2 + (-4 + r2) * cosr) *     
-            polylog(2, 0.5 + (complex(0, 1) * cotro2)/r) -     
+            Li2(0.5 + (complex(0, 1) * cotro2)/r) -     
             8 * r * atan(((4 - r2 + (4 + r2) * cosr) * cscr)/(4 * r)) * sinr -     
             8 * r * atan((r * tanro2)/2) * sinr)
         )/(ej * pi * (-4 - r2 + (-4 + r2) * cosr))

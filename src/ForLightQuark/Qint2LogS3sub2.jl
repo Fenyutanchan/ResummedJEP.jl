@@ -31,9 +31,9 @@ function Qint2LogS3sub2(ej, r, R, AlphaS)
             3 * log(1 + cosbigR) * tmp10 + complex(0, 3) * pi * tmp11 +   
             3 * log(1 - cosbigR) * tmp11 - 3 * tmp12 * tmp11 -   
             3 * log(cosbigR) * tmp11 + 3 * log(1 + cosbigR) * tmp11 -   
-            3 * polylog(2, 0.5 + 2/r2) + 3 * polylog(2, r2/4) -   
-            3 * polylog(2, (4 + r2)/8) - 3 * polylog(2, 1/(1 - cosbigR)) -   
-            3 * polylog(2, 1/(1 + cosbigR)) + 3 * polylog(2, tanbigRo2^2)
+            3 * Li2(0.5 + 2/r2) + 3 * Li2(r2/4) -   
+            3 * Li2((4 + r2)/8) - 3 * Li2(1/(1 - cosbigR)) -   
+            3 * Li2(1/(1 + cosbigR)) + 3 * Li2(tanbigRo2^2)
         )
     )/(3 * ej * pi)
 

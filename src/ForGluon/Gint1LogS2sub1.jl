@@ -746,106 +746,106 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                     (2 * r * sinro2)/(complex(0, 2) * cosro2 + r * sinro2)
                 )
             )/(8 * r6 * (4 + r2)) +
-            2 * polylog(2, 
+            2 * Li2(
                 (r * (4 + r2 - (-4 + r2) * cosr))/
                     (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
             ) -
             (
-                35 * (-4 + r2)^8 * polylog(2, 
+                35 * (-4 + r2)^8 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^8 -
             (
-                5 * (-4 + r2)^7 * polylog(2, 
+                5 * (-4 + r2)^7 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^7 +
             (
-                115 * (-4 + r2)^6 * polylog(2, 
+                115 * (-4 + r2)^6 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^6 +
             (
-                5 * (-4 + r2)^5 * polylog(2, 
+                5 * (-4 + r2)^5 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^5 -
             (
-                139 * (-4 + r2)^4 * polylog(2, 
+                139 * (-4 + r2)^4 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^4 +
             (
-                13 * (-4 + r2)^3 * polylog(2, 
+                13 * (-4 + r2)^3 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^3 +
             (
-                73 * (-4 + r2)^2 * polylog(2, 
+                73 * (-4 + r2)^2 * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2)^2 -
             (
-                29 * (-4 + r2) * polylog(2, 
+                29 * (-4 + r2) * Li2(
                     (r * (4 + r2 - (-4 + r2) * cosr))/
                         (2 * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))
                 )
             )/(4 + r2) +
-            2 * polylog(2, 
+            2 * Li2(
                 (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                     (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
             ) -
             (
-                35 * (-4 + r2)^8 * polylog(2, 
+                35 * (-4 + r2)^8 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^8 -
             (
-                5 * (-4 + r2)^7 * polylog(2, 
+                5 * (-4 + r2)^7 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^7 +
             (
-                115 * (-4 + r2)^6 * polylog(2, 
+                115 * (-4 + r2)^6 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^6 +
             (
-                5 * (-4 + r2)^5 * polylog(2, 
+                5 * (-4 + r2)^5 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^5 -
             (
-                139 * (-4 + r2)^4 * polylog(2, 
+                139 * (-4 + r2)^4 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^4 +
             (
-                13 * (-4 + r2)^3 * polylog(2, 
+                13 * (-4 + r2)^3 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^3 +
             (
-                73 * (-4 + r2)^2 * polylog(2, 
+                73 * (-4 + r2)^2 * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
             )/(4 + r2)^2 -
             (
-                29 * (-4 + r2) * polylog(2, 
+                29 * (-4 + r2) * Li2(
                     (complex(0, -1) * r * (-4 - r2 + (-4 + r2) * cosr))/
                         (complex(0, 8) * r * cosr + 2 * (4 + r2) * sinr)
                 )
@@ -2380,9 +2380,9 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                     log((complex(0, -0.5) * (4 + r2) *
                         (complex(0, 2) * cosro2 + r * sinro2)^2)/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                384 * polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                384 * Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                     (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))) -
-                384 * polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                384 * Li2((complex(0, -0.25) * (-4 + r2) *
                         (-4 - r2 + (-4 + r2) * cosr))/
                     (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))) +
                 144 * (4 - r2) * ((-8 *
@@ -2484,9 +2484,9 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                         log((complex(0, -0.5) * (4 + r2) *
                             (complex(0, 2) * cosro2 + r * sinro2)^2)/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                    384 * polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                    384 * Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                         (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))) -
-                    384 * polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                    384 * Li2((complex(0, -0.25) * (-4 + r2) *
                         (-4 - r2 + (-4 + r2) * cosr))/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))) +
                     144 * (4 - r2) * ((-8 *
@@ -2589,9 +2589,9 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                         log((complex(0, -0.5) * (4 + r2) *
                             (complex(0, 2) * cosro2 + r * sinro2)^2)/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                    384 * polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                    384 * Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                         (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))) -
-                    384 * polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                    384 * Li2((complex(0, -0.25) * (-4 + r2) *
                         (-4 - r2 + (-4 + r2) * cosr))/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))) +
                     144 * (4 - r2) * ((-8 *
@@ -2694,9 +2694,9 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                         log((complex(0, -0.5) * (4 + r2) *
                             (complex(0, 2) * cosro2 + r * sinro2)^2)/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                    384 * polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                    384 * Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                         (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))) -
-                    384 * polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                    384 * Li2((complex(0, -0.25) * (-4 + r2) *
                         (-4 - r2 + (-4 + r2) * cosr))/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))) +
                     144 * (4 - r2) * ((-8 *
@@ -2799,9 +2799,9 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                         log((complex(0, -0.5) * (4 + r2) *
                             (complex(0, 2) * cosro2 + r * sinro2)^2)/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                    384 * polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                    384 * Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                         (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr))) -
-                    384 * polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                    384 * Li2((complex(0, -0.25) * (-4 + r2) *
                         (-4 - r2 + (-4 + r2) * cosr))/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr))) +
                     144 * (4 - r2) * ((-8 *
@@ -2899,7 +2899,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                         log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                         (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^3 + (360 * (-4 + r2)^3 *
                     (tmp1 *
@@ -2908,7 +2908,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                         log((complex(0, -0.5) * (4 + r2) *
                             (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                         (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^3 - (72 * (-4 + r2) *
@@ -3041,7 +3041,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^3 - (360 * (-4 + r2)^3 *
                         (tmp1 *
@@ -3050,7 +3050,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^3 + (72 * (-4 + r2) *
@@ -3189,7 +3189,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^3 - (360 * (-4 + r2)^3 *
                         (tmp1 *
@@ -3198,7 +3198,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^3 + (72 * (-4 + r2) *
@@ -3337,7 +3337,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^3 - (360 * (-4 + r2)^3 *
                         (tmp1 *
@@ -3346,7 +3346,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^3 + (72 * (-4 + r2) *
@@ -3485,7 +3485,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^3 - (360 * (-4 + r2)^3 *
                         (tmp1 *
@@ -3494,7 +3494,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^3 + (72 * (-4 + r2) *
@@ -3632,7 +3632,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (120 * (-4 + r2)^2 *
                         (tmp1 *
@@ -3641,7 +3641,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (complex(0, 12) *
@@ -3767,7 +3767,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (120 * (-4 + r2)^2 *
                         (tmp1 *
@@ -3776,7 +3776,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (complex(0, 12) *
@@ -3902,7 +3902,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (120 * (-4 + r2)^2 *
                         (tmp1 *
@@ -3911,7 +3911,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (complex(0, 12) *
@@ -4037,7 +4037,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (120 * (-4 + r2)^2 *
                         (tmp1 *
@@ -4046,7 +4046,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (complex(0, 12) *
@@ -4172,7 +4172,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (120 * (-4 + r2)^2 *
                         (tmp1 *
@@ -4181,7 +4181,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^2 + (complex(0, 12) *
@@ -4305,7 +4305,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2) - (24 * (-4 + r2) *
                         (tmp1 *
@@ -4314,7 +4314,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/(4 + r2)
             + (6 * (-1 + log((complex(0, -2) * cosro2 + r * sinro2)/
@@ -4426,7 +4426,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2) - (24 * (-4 + r2) *
                         (tmp1 *
@@ -4435,7 +4435,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/(4 + r2)
             + (6 * (-1 + log((complex(0, -2) * cosro2 + r * sinro2)/
@@ -4547,7 +4547,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2) - (24 * (-4 + r2) *
                         (tmp1 *
@@ -4556,7 +4556,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/(4 + r2)
             + (6 * (-1 + log((complex(0, -2) * cosro2 + r * sinro2)/
@@ -4668,7 +4668,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2) - (24 * (-4 + r2) *
                         (tmp1 *
@@ -4677,7 +4677,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/(4 + r2)
             + (6 * (-1 + log((complex(0, -2) * cosro2 + r * sinro2)/
@@ -4789,7 +4789,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2) - (24 * (-4 + r2) *
                         (tmp1 *
@@ -4798,7 +4798,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/(4 + r2)
             + (6 * (-1 + log((complex(0, -2) * cosro2 + r * sinro2)/
@@ -4913,7 +4913,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5040 * (-4 + r2)^4 *
                         (tmp1 *
@@ -4922,7 +4922,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5760 * (-4 + r2)^3 *
@@ -5112,7 +5112,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5040 * (-4 + r2)^4 *
                         (tmp1 *
@@ -5121,7 +5121,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5760 * (-4 + r2)^3 *
@@ -5311,7 +5311,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5040 * (-4 + r2)^4 *
                         (tmp1 *
@@ -5320,7 +5320,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5760 * (-4 + r2)^3 *
@@ -5510,7 +5510,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             (4 * r * (r * cosro2 + complex(0, 2) * sinro2))) -
                             log((complex(0, -2) * cosro2 + r * sinro2)/
                             (complex(0, 2) * cosro2 + r * sinro2))) +
-                        polylog(2, (-16 + r4 - (-4 + r2)^2 * cosr)/
+                        Li2((-16 + r4 - (-4 + r2)^2 * cosr)/
                             (4 * r * (4 * r * cosr + complex(0, 1) * (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5040 * (-4 + r2)^4 *
                         (tmp1 *
@@ -5519,7 +5519,7 @@ function Gint1LogS2sub1(ej, r, AlphaS)
                             log((complex(0, -0.5) * (4 + r2) *
                                 (complex(0, 2) * cosro2 + r * sinro2)^2)/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))) -
-                        polylog(2, (complex(0, -0.25) * (-4 + r2) *
+                        Li2((complex(0, -0.25) * (-4 + r2) *
                             (-4 - r2 + (-4 + r2) * cosr))/
                             (r * (complex(0, 4) * r * cosr + (4 + r2) * sinr)))))/
                     (4 + r2)^4 + (5760 * (-4 + r2)^3 *

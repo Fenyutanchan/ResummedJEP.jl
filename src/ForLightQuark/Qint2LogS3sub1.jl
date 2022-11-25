@@ -1117,256 +1117,256 @@ function Qint2LogS3sub1(ej, r, R, AlphaS)
             368640 * r18 * cosbigR^5 * log(1 + cosbigR) * tmp11 +
             46080 * r20 * cosbigR^5 * log(1 + cosbigR) * tmp11 +
             46080 * (-4 + r2)^2 * (4 + r2)^6 * cosbigR^3 *
-            (4 + r2 + (-4 + r2) * cosbigR)^2 * polylog(2, r2/4) +
+            (4 + r2 + (-4 + r2) * cosbigR)^2 * Li2(r2/4) +
             737280 * (-4 + r2)^3 * (64 + 112 * r2 + 188 * r4 - 35 * r6 + r8) *
             cosbigR^3 * (4 + r2 + (-4 + r2) * cosbigR)^2 *
-            polylog(2, 0.5 - r2/8) +
-            48318382080 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            72477573120 * r2 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            114756157440 * r4 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            70967623680 * r6 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            7549747200 * r8 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            7832862720 * r10 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            448266240 * r12 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            218234880 * r14 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            28753920 * r16 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            737280 * r18 * cosbigR^3 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            96636764160 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            96636764160 * r2 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            169114337280 * r4 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            241591910400 * r6 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            80782295040 * r8 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            754974720 * r10 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            4624220160 * r12 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            943718400 * r14 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            69304320 * r16 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            1474560 * r18 * cosbigR^4 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            48318382080 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            24159191040 * r2 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            66437775360 * r4 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            158544691200 * r6 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            110226309120 * r8 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            38031851520 * r10 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            7290224640 * r12 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            772669440 * r14 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) +
-            40550400 * r16 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            737280 * r18 * cosbigR^5 * polylog(2, -(-4 + r2)^2/(16. * r2)) -
-            48318382080 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            72477573120 * r2 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            39258685440 * r4 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            6039797760 * r6 * cosbigR^3 * polylog(2, (4 + r2)/8) +
-            2642411520 * r8 * cosbigR^3 * polylog(2, (4 + r2)/8) +
-            1321205760 * r10 * cosbigR^3 * polylog(2, (4 + r2)/8) +
-            165150720 * r12 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            23592960 * r14 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            9584640 * r16 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            1105920 * r18 * cosbigR^3 * polylog(2, (4 + r2)/8) -
-            46080 * r20 * cosbigR^3 * polylog(2, (4 + r2)/8) +
-            96636764160 * cosbigR^4 * polylog(2, (4 + r2)/8) +
-            96636764160 * r2 * cosbigR^4 * polylog(2, (4 + r2)/8) +
-            18119393280 * r4 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            12079595520 * r6 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            5284823040 * r8 * cosbigR^4 * polylog(2, (4 + r2)/8) +
-            330301440 * r12 * cosbigR^4 * polylog(2, (4 + r2)/8) +
-            47185920 * r14 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            4423680 * r16 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            1474560 * r18 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            92160 * r20 * cosbigR^4 * polylog(2, (4 + r2)/8) -
-            48318382080 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            24159191040 * r2 * cosbigR^5 * polylog(2, (4 + r2)/8) +
-            9059696640 * r4 * cosbigR^5 * polylog(2, (4 + r2)/8) +
-            6039797760 * r6 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            377487360 * r8 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            566231040 * r10 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            23592960 * r12 * cosbigR^5 * polylog(2, (4 + r2)/8) +
-            23592960 * r14 * cosbigR^5 * polylog(2, (4 + r2)/8) +
-            2211840 * r16 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            368640 * r18 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            46080 * r20 * cosbigR^5 * polylog(2, (4 + r2)/8) -
-            48318382080 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            72477573120 * r2 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            39258685440 * r4 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            6039797760 * r6 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) +
-            2642411520 * r8 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) +
-            1321205760 * r10 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) +
-            165150720 * r12 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            23592960 * r14 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            9584640 * r16 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            1105920 * r18 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) -
-            46080 * r20 * cosbigR^3 * polylog(2, 1/(1 + cosbigR)) +
-            96636764160 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) +
-            96636764160 * r2 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) +
-            18119393280 * r4 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            12079595520 * r6 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            5284823040 * r8 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) +
-            330301440 * r12 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) +
-            47185920 * r14 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            4423680 * r16 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            1474560 * r18 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            92160 * r20 * cosbigR^4 * polylog(2, 1/(1 + cosbigR)) -
-            48318382080 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            24159191040 * r2 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) +
-            9059696640 * r4 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) +
-            6039797760 * r6 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            377487360 * r8 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            566231040 * r10 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            23592960 * r12 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) +
-            23592960 * r14 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) +
-            2211840 * r16 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            368640 * r18 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            46080 * r20 * cosbigR^5 * polylog(2, 1/(1 + cosbigR)) -
-            48318382080 * cosbigR^3 * polylog(2, 
+            Li2(0.5 - r2/8) +
+            48318382080 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            72477573120 * r2 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            114756157440 * r4 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            70967623680 * r6 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            7549747200 * r8 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            7832862720 * r10 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            448266240 * r12 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            218234880 * r14 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            28753920 * r16 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            737280 * r18 * cosbigR^3 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            96636764160 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            96636764160 * r2 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            169114337280 * r4 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            241591910400 * r6 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            80782295040 * r8 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            754974720 * r10 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            4624220160 * r12 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            943718400 * r14 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            69304320 * r16 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            1474560 * r18 * cosbigR^4 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            48318382080 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            24159191040 * r2 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            66437775360 * r4 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            158544691200 * r6 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            110226309120 * r8 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            38031851520 * r10 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            7290224640 * r12 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            772669440 * r14 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) +
+            40550400 * r16 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            737280 * r18 * cosbigR^5 * Li2(-(-4 + r2)^2/(16. * r2)) -
+            48318382080 * cosbigR^3 * Li2((4 + r2)/8) -
+            72477573120 * r2 * cosbigR^3 * Li2((4 + r2)/8) -
+            39258685440 * r4 * cosbigR^3 * Li2((4 + r2)/8) -
+            6039797760 * r6 * cosbigR^3 * Li2((4 + r2)/8) +
+            2642411520 * r8 * cosbigR^3 * Li2((4 + r2)/8) +
+            1321205760 * r10 * cosbigR^3 * Li2((4 + r2)/8) +
+            165150720 * r12 * cosbigR^3 * Li2((4 + r2)/8) -
+            23592960 * r14 * cosbigR^3 * Li2((4 + r2)/8) -
+            9584640 * r16 * cosbigR^3 * Li2((4 + r2)/8) -
+            1105920 * r18 * cosbigR^3 * Li2((4 + r2)/8) -
+            46080 * r20 * cosbigR^3 * Li2((4 + r2)/8) +
+            96636764160 * cosbigR^4 * Li2((4 + r2)/8) +
+            96636764160 * r2 * cosbigR^4 * Li2((4 + r2)/8) +
+            18119393280 * r4 * cosbigR^4 * Li2((4 + r2)/8) -
+            12079595520 * r6 * cosbigR^4 * Li2((4 + r2)/8) -
+            5284823040 * r8 * cosbigR^4 * Li2((4 + r2)/8) +
+            330301440 * r12 * cosbigR^4 * Li2((4 + r2)/8) +
+            47185920 * r14 * cosbigR^4 * Li2((4 + r2)/8) -
+            4423680 * r16 * cosbigR^4 * Li2((4 + r2)/8) -
+            1474560 * r18 * cosbigR^4 * Li2((4 + r2)/8) -
+            92160 * r20 * cosbigR^4 * Li2((4 + r2)/8) -
+            48318382080 * cosbigR^5 * Li2((4 + r2)/8) -
+            24159191040 * r2 * cosbigR^5 * Li2((4 + r2)/8) +
+            9059696640 * r4 * cosbigR^5 * Li2((4 + r2)/8) +
+            6039797760 * r6 * cosbigR^5 * Li2((4 + r2)/8) -
+            377487360 * r8 * cosbigR^5 * Li2((4 + r2)/8) -
+            566231040 * r10 * cosbigR^5 * Li2((4 + r2)/8) -
+            23592960 * r12 * cosbigR^5 * Li2((4 + r2)/8) +
+            23592960 * r14 * cosbigR^5 * Li2((4 + r2)/8) +
+            2211840 * r16 * cosbigR^5 * Li2((4 + r2)/8) -
+            368640 * r18 * cosbigR^5 * Li2((4 + r2)/8) -
+            46080 * r20 * cosbigR^5 * Li2((4 + r2)/8) -
+            48318382080 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            72477573120 * r2 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            39258685440 * r4 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            6039797760 * r6 * cosbigR^3 * Li2(1/(1 + cosbigR)) +
+            2642411520 * r8 * cosbigR^3 * Li2(1/(1 + cosbigR)) +
+            1321205760 * r10 * cosbigR^3 * Li2(1/(1 + cosbigR)) +
+            165150720 * r12 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            23592960 * r14 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            9584640 * r16 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            1105920 * r18 * cosbigR^3 * Li2(1/(1 + cosbigR)) -
+            46080 * r20 * cosbigR^3 * Li2(1/(1 + cosbigR)) +
+            96636764160 * cosbigR^4 * Li2(1/(1 + cosbigR)) +
+            96636764160 * r2 * cosbigR^4 * Li2(1/(1 + cosbigR)) +
+            18119393280 * r4 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            12079595520 * r6 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            5284823040 * r8 * cosbigR^4 * Li2(1/(1 + cosbigR)) +
+            330301440 * r12 * cosbigR^4 * Li2(1/(1 + cosbigR)) +
+            47185920 * r14 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            4423680 * r16 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            1474560 * r18 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            92160 * r20 * cosbigR^4 * Li2(1/(1 + cosbigR)) -
+            48318382080 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            24159191040 * r2 * cosbigR^5 * Li2(1/(1 + cosbigR)) +
+            9059696640 * r4 * cosbigR^5 * Li2(1/(1 + cosbigR)) +
+            6039797760 * r6 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            377487360 * r8 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            566231040 * r10 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            23592960 * r12 * cosbigR^5 * Li2(1/(1 + cosbigR)) +
+            23592960 * r14 * cosbigR^5 * Li2(1/(1 + cosbigR)) +
+            2211840 * r16 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            368640 * r18 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            46080 * r20 * cosbigR^5 * Li2(1/(1 + cosbigR)) -
+            48318382080 * cosbigR^3 * Li2(
                 (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             72477573120 * r2 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             114756157440 * r4 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             70967623680 * r6 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             7549747200 * r8 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             7832862720 * r10 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             448266240 * r12 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             218234880 * r14 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             28753920 * r16 * cosbigR^3 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            737280 * r18 * cosbigR^3 * polylog(2, 
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            737280 * r18 * cosbigR^3 * Li2(
                 (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            96636764160 * cosbigR^4 * polylog(2, 
+            96636764160 * cosbigR^4 * Li2(
                 (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             96636764160 * r2 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             169114337280 * r4 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             241591910400 * r6 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             80782295040 * r8 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             754974720 * r10 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             4624220160 * r12 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             943718400 * r14 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             69304320 * r16 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             1474560 * r18 * cosbigR^4 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
-            48318382080 * cosbigR^5 * polylog(2, 
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            48318382080 * cosbigR^5 * Li2(
                 (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             24159191040 * r2 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             66437775360 * r4 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             158544691200 * r6 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             110226309120 * r8 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             38031851520 * r10 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             7290224640 * r12 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             772669440 * r14 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             40550400 * r16 * cosbigR^5 *
-            polylog(2, (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            737280 * r18 * cosbigR^5 * polylog(2, 
+            Li2((2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            737280 * r18 * cosbigR^5 * Li2(
                 (2 * r2 * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            48318382080 * cosbigR^3 * polylog(2, 
+            48318382080 * cosbigR^3 * Li2(
                 ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             72477573120 * r2 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             114756157440 * r4 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             70967623680 * r6 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             7549747200 * r8 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             7832862720 * r10 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             448266240 * r12 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             218234880 * r14 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             28753920 * r16 * cosbigR^3 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
-            737280 * r18 * cosbigR^3 * polylog(2, 
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            737280 * r18 * cosbigR^3 * Li2(
                 ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
-            96636764160 * cosbigR^4 * polylog(2, 
+            96636764160 * cosbigR^4 * Li2(
                 ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             96636764160 * r2 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             169114337280 * r4 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             241591910400 * r6 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             80782295040 * r8 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             754974720 * r10 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             4624220160 * r12 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             943718400 * r14 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             69304320 * r16 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             1474560 * r18 * cosbigR^4 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            48318382080 * cosbigR^5 * polylog(2, 
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            48318382080 * cosbigR^5 * Li2(
                 ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             24159191040 * r2 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             66437775360 * r4 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             158544691200 * r6 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             110226309120 * r8 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             38031851520 * r10 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             7290224640 * r12 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
             772669440 * r14 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
             40550400 * r16 * cosbigR^5 *
-            polylog(2, ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
-            737280 * r18 * cosbigR^5 * polylog(2, 
+            Li2(((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) -
+            737280 * r18 * cosbigR^5 * Li2(
                 ((-4 + r2) * cosbigR)/(4 + r2 + (-4 + r2) * cosbigR)) +
-            48318382080 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            72477573120 * r2 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            39258685440 * r4 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            6039797760 * r6 * cosbigR^3 * polylog(2, tanbigRo2^2) -
-            2642411520 * r8 * cosbigR^3 * polylog(2, tanbigRo2^2) -
-            1321205760 * r10 * cosbigR^3 * polylog(2, tanbigRo2^2) -
-            165150720 * r12 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            23592960 * r14 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            9584640 * r16 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            1105920 * r18 * cosbigR^3 * polylog(2, tanbigRo2^2) +
-            46080 * r20 * cosbigR^3 * polylog(2, tanbigRo2^2) -
-            96636764160 * cosbigR^4 * polylog(2, tanbigRo2^2) -
-            96636764160 * r2 * cosbigR^4 * polylog(2, tanbigRo2^2) -
-            18119393280 * r4 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            12079595520 * r6 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            5284823040 * r8 * cosbigR^4 * polylog(2, tanbigRo2^2) -
-            330301440 * r12 * cosbigR^4 * polylog(2, tanbigRo2^2) -
-            47185920 * r14 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            4423680 * r16 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            1474560 * r18 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            92160 * r20 * cosbigR^4 * polylog(2, tanbigRo2^2) +
-            48318382080 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            24159191040 * r2 * cosbigR^5 * polylog(2, tanbigRo2^2) -
-            9059696640 * r4 * cosbigR^5 * polylog(2, tanbigRo2^2) -
-            6039797760 * r6 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            377487360 * r8 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            566231040 * r10 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            23592960 * r12 * cosbigR^5 * polylog(2, tanbigRo2^2) -
-            23592960 * r14 * cosbigR^5 * polylog(2, tanbigRo2^2) -
-            2211840 * r16 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            368640 * r18 * cosbigR^5 * polylog(2, tanbigRo2^2) +
-            46080 * r20 * cosbigR^5 * polylog(2, tanbigRo2^2)
+            48318382080 * cosbigR^3 * Li2(tanbigRo2^2) +
+            72477573120 * r2 * cosbigR^3 * Li2(tanbigRo2^2) +
+            39258685440 * r4 * cosbigR^3 * Li2(tanbigRo2^2) +
+            6039797760 * r6 * cosbigR^3 * Li2(tanbigRo2^2) -
+            2642411520 * r8 * cosbigR^3 * Li2(tanbigRo2^2) -
+            1321205760 * r10 * cosbigR^3 * Li2(tanbigRo2^2) -
+            165150720 * r12 * cosbigR^3 * Li2(tanbigRo2^2) +
+            23592960 * r14 * cosbigR^3 * Li2(tanbigRo2^2) +
+            9584640 * r16 * cosbigR^3 * Li2(tanbigRo2^2) +
+            1105920 * r18 * cosbigR^3 * Li2(tanbigRo2^2) +
+            46080 * r20 * cosbigR^3 * Li2(tanbigRo2^2) -
+            96636764160 * cosbigR^4 * Li2(tanbigRo2^2) -
+            96636764160 * r2 * cosbigR^4 * Li2(tanbigRo2^2) -
+            18119393280 * r4 * cosbigR^4 * Li2(tanbigRo2^2) +
+            12079595520 * r6 * cosbigR^4 * Li2(tanbigRo2^2) +
+            5284823040 * r8 * cosbigR^4 * Li2(tanbigRo2^2) -
+            330301440 * r12 * cosbigR^4 * Li2(tanbigRo2^2) -
+            47185920 * r14 * cosbigR^4 * Li2(tanbigRo2^2) +
+            4423680 * r16 * cosbigR^4 * Li2(tanbigRo2^2) +
+            1474560 * r18 * cosbigR^4 * Li2(tanbigRo2^2) +
+            92160 * r20 * cosbigR^4 * Li2(tanbigRo2^2) +
+            48318382080 * cosbigR^5 * Li2(tanbigRo2^2) +
+            24159191040 * r2 * cosbigR^5 * Li2(tanbigRo2^2) -
+            9059696640 * r4 * cosbigR^5 * Li2(tanbigRo2^2) -
+            6039797760 * r6 * cosbigR^5 * Li2(tanbigRo2^2) +
+            377487360 * r8 * cosbigR^5 * Li2(tanbigRo2^2) +
+            566231040 * r10 * cosbigR^5 * Li2(tanbigRo2^2) +
+            23592960 * r12 * cosbigR^5 * Li2(tanbigRo2^2) -
+            23592960 * r14 * cosbigR^5 * Li2(tanbigRo2^2) -
+            2211840 * r16 * cosbigR^5 * Li2(tanbigRo2^2) +
+            368640 * r18 * cosbigR^5 * Li2(tanbigRo2^2) +
+            46080 * r20 * cosbigR^5 * Li2(tanbigRo2^2)
         ) * secbigR^3
     )/(46080 * ej * pi * (-4 + r2)^2 * (4 + r2)^6 * (4 + r2 + (-4 + r2) * cosbigR)^2)
 

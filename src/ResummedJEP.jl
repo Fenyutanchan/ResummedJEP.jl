@@ -2,9 +2,8 @@ module ResummedJEP
 
     using   FiniteDifferences
     using   Measurements
-    # import  PolyLog
-    using   Polylogarithms
-    using   Roots
+    # using   Polylogarithms
+    # using   Roots
 
     using   AlphaS, JetTool
     using   StructParticle
@@ -17,9 +16,9 @@ module ResummedJEP
     include("Constants.jl")
     include("FinalExpression.jl")
     include("JetToJEP.jl")
-    # include("NonPerturbativeEffect.jl")
+    include("MathematicalTools.jl")
     include("TmpFunction.jl")
 
-    # include("ExtraPackageCompatible.jl")
+    # include("ExtraPackageExtension.jl")
 
 end # module ResummedJEP

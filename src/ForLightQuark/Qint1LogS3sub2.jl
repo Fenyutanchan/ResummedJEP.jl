@@ -38,8 +38,8 @@ function Qint1LogS3sub2(ej, r, AlphaS)
             (complex(0, 3) * pi * (-4 + r2) * cosr * tmp6)/(4 + r2) -
             (3 * (-4 + r2) * cosr * log(1 - cosr) * tmp6)/(4 + r2) +
             (3 * (-4 + r2) * cosr * tmp18 * tmp6)/(4 + r2) +
-            (3 * (-4 + r2) * cosr * polylog(2, 0.5 + 2/r2))/(4 + r2) +
-            (3 * (-4 + r2) * cosr * polylog(2, 1/(1 - cosr)))/(4 + r2)
+            (3 * (-4 + r2) * cosr * Li2(0.5 + 2/r2))/(4 + r2) +
+            (3 * (-4 + r2) * cosr * Li2(1/(1 - cosr)))/(4 + r2)
         ) * secr
     )/(3 * ej * pi * (-4 + r2))
 

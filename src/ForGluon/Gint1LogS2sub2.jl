@@ -19,9 +19,9 @@ function Gint1LogS2sub2(ej, r, AlphaS)
                 4 * cosr * log(4 + r^2 - (-4 + r^2) * cosr) -
                 r^2 * cosr * log(4 + r^2 - (-4 + r^2) * cosr) +
                 (-4 - r^2 + (-4 + r^2) * cosr) *
-                    polylog(2, 0.5 - (complex(0, 1) * cotro2)/r) +
+                    Li2(0.5 - (im * cotro2)/r) +
                 (-4 - r^2 + (-4 + r^2) * cosr) *
-                    polylog(2, 0.5 + (complex(0, 1) * cotro2)/r) -
+                    Li2(0.5 + (im * cotro2)/r) -
                 8 * r * atan(
                     ((4 - r^2 + (4 + r^2) * cosr) * cscr)/(4 * r)
                 ) * sinr -

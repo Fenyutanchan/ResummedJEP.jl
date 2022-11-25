@@ -30,9 +30,9 @@ function Gint1LogS3sub2(ej, r, AlphaS)
             3 * log(1 + cosr) * tmp5 + complex(0, 3) * pi * tmp6 +
             3 * log(1 - cosr) * tmp6 - 3 * tmp18 * tmp6 -
             3 * log(cosr) * tmp6 + 3 * log(1 + cosr) * tmp6 -
-            3 * polylog(2, 0.5 + 2/r2) + 3 * polylog(2, r2/4) -
-            3 * polylog(2, (4 + r2)/8) - 3 * polylog(2, 1/(1 - cosr)) -
-            3 * polylog(2, 1/(1 + cosr)) + 3 * polylog(2, tanro2^2)
+            3 * Li2(0.5 + 2/r2) + 3 * Li2(r2/4) -
+            3 * Li2((4 + r2)/8) - 3 * Li2(1/(1 - cosr)) -
+            3 * Li2(1/(1 + cosr)) + 3 * Li2(tanro2^2)
         )
     )/(3 * ej * pi)
 
