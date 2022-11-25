@@ -1,6 +1,6 @@
 module ResummedJEP
 
-    using   FiniteDifferences
+    using   ForwardDiff
     using   Measurements
     # using   Polylogarithms
     # using   Roots
