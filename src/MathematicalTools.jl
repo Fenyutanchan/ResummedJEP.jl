@@ -1,21 +1,5 @@
-function find_root(f::Function, x0::Number)::Number
-    target_relative_error   =   1e-8
-    @assert typeof(f(x0)) <: Number
-
-    x               =   x0
-    x_next          =   x - f(x) / ForwardDiff.derivative(f, x)
-    relative_error  =   (x - x_next) / x
-    while relative_error > target_relative_error
-        x               =   x_next
-        x_next          =   x - f(x) / ForwardDiff.derivative(f, x)
-        relative_error  =   (x - x_next) / x
-    end
-    
-    return  x_next
-end
-
 function Li2(z_input::Number)::Number
-    z       =   z_input + 0im # Complexify any Number
+    z       =   z_input + im * zero(z_input) # Complexify any Number
     zeta2   =   π^2 / 6
 
     rz  =   real(z)
@@ -130,4 +114,51 @@ function Li2_Real(x::Real)::Real
     q = cq[1] + y * cq[2] + y2 * (cq[3] + y * cq[4]) + y4 * (cq[5] + y * cq[6] + y2 * cq[7])
 
     return rest + sgn * y * p / q
+end
+
+function root_of_JEP(f::Function, x0::Real)::Real
+    # x0 should be 0.1
+    target_precision    =   1e-8
+
+    if f(x0) ≈ 0
+        return x0
+    end
+
+    step    =   0.01 * (f(x0) > 0 ? -1 : 1)
+    x       =   x0 + step
+    while f(x) * f(x0) > 0
+        if f(x) ≈ 0
+            return x
+        end
+        x   =   x0 + step
+    end
+
+    (x_left, x_right)   =   x < x0 ? (x, x0) : (x0, x)
+    x_middle            =   (x_left + x_right) / 2
+    tmp_error           =   max(
+        abs(x_left - x_right),
+        abs(f(x_left)),
+        abs(f(x_right))
+    )
+
+    while tmp_error > target_precision
+        if f(x_middle) ≈ 0
+            return x_middle
+        elseif f(x_left) * f(x_middle) < 0
+            (x_left, x_right)   =   (x_left, x_middle)
+        elseif f(x_middle) * f(x_right) < 0
+            (x_left, x_right)   =   (x_middle, x_right)
+        else
+            println("$x_left, $x_right, $(f(x_left)), $(f(x_right)).")
+            throw("What happend?")
+        end
+        x_middle    =   (x_left + x_right) / 2
+        tmp_error   =   max(
+            abs(x_left - x_right),
+            abs(f(x_left)),
+            abs(f(x_right))
+        )
+    end
+    
+    return  x_middle
 end
