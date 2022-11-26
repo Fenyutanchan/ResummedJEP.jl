@@ -124,22 +124,19 @@ function root_of_JEP(f::Function, x0::Real)::Real
         return x0
     end
 
-    step    =   0.01 * (f(x0) > 0 ? -1 : 1)
+    step    =   f(x0) / ForwardDiff.derivative(f, x0)
+    step    *=  .1 * (f(x0) > 0 ? -1 : 1)
     x       =   x0 + step
     while f(x) * f(x0) > 0
         if f(x) ≈ 0
             return x
         end
-        x   =   x0 + step
+        x   =   x + step
     end
 
     (x_left, x_right)   =   x < x0 ? (x, x0) : (x0, x)
     x_middle            =   (x_left + x_right) / 2
-    tmp_error           =   max(
-        abs(x_left - x_right),
-        abs(f(x_left)),
-        abs(f(x_right))
-    )
+    tmp_error           =   abs(x_left - x_right)
 
     while tmp_error > target_precision
         if f(x_middle) ≈ 0
@@ -153,11 +150,7 @@ function root_of_JEP(f::Function, x0::Real)::Real
             throw("What happend?")
         end
         x_middle    =   (x_left + x_right) / 2
-        tmp_error   =   max(
-            abs(x_left - x_right),
-            abs(f(x_left)),
-            abs(f(x_right))
-        )
+        tmp_error   =   abs(x_left - x_right)
     end
     
     return  x_middle
